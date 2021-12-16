@@ -1,0 +1,54 @@
+Primera entrega 
+	Formulario para la creacion de usuarios 
+	Crear el proceso de insercion de usuarios
+	Autenticacion de usuarios 
+	Conexion a la base de datos 
+	Crear el encabezado de la pagina 
+	Crear el pie de la pagina
+	Crear el evento para salir 
+	Crear los estilos  
+	Crear el formulario de eventos
+	Crear el proceso de insercion del formaulario de eventos
+		-Hacer el insert del evento	
+	Crear un menu principal para la página 
+	Crear la sesion para el usuario 
+	Crear el formularion para agregar material
+	Crear el proceso para agregar el material
+	Formulario para editar el material
+	Crear el proceso para guardar los cambios del material 
+	Crear el proceso para eliminar material
+	Crear el formulario para listar el material
+
+Segunda Entrega 
+	-Establecer como predeterminada la fecha del evento a la fecha del sistema (hecho)
+	-Cambiar el value de fecha de entrega a la fecha del evento (hecho)
+	-Aumentar el tamaño de letra en el formulario de eventos (hecho)
+	-Validar las fechas del evento (Hecho)
+	-Añadir datos del cliente (hecho)
+	Formulario de eventos
+		-Insertar evento que muestre la cantidad de inventario al pasar el mouse por debajo (Hecho)
+		-Verificar que el formulario no esté vacio (Hecho)
+		-Verificar que sí exista material suficiente en el inventario para el evento (Hecho)
+		-Actualizar el material en el inventario  (Hecho)
+		-Agregar las rentas del material asociadas al evento  (Hecho)
+	-Agregar fotos para los trabajadores (Hecho)
+	-Ver los abonos y totales a pagar de cada evento, asi como agregar abonos (hecho)
+		Verificar los campos vacios 
+		Si existe el abono actualizar el abono
+		Si no existe el abono crear el abono
+	-Editar evento (update en evento, update en rentas)  
+		-Mostrar en placeholder las cantidades y los datos del evento a editar  (hecho)
+		-Consulta para mostrar todos los materiales y solo las cantidades rentadas por el evento (hecho)
+			select *
+			from material as a left join (select * from renta where id_Evento=n) as b  on a.id_Material=b.id_Material;
+		-Verificar que sí exista material suficiente y no marque que no hay material cuando si hay (hecho)
+		-Si la renta de material existe -> actualizarla(update) si no -> hacer una nueva (insert) y actualizar el inventario  (hecho)
+		-Si ya no se quiere pedir un material (se deja en 0 ) -> eliminar el registro y actualizar el inventario  (hecho)
+	-Eliminar eventos
+		-Se actualizan los inventarios 
+		-Se eliminan las rentas utilizadas  
+		-Se elimina el registro de abono asociado al evento Hecho
+		-Se elimina el evento 
+	-Agregar rentas
+		-Se hace una consulta distinct  y sum para obtener la cantidad total que se esta usando por material
+	

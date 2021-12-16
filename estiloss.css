@@ -1,0 +1,140 @@
+*{
+	margin:0;
+	padding:0;
+	border: 0px solid #000000;	
+}
+header, section, footer, aside, nav, article, figure, figcaption{
+	display: block;
+}
+h1 {
+	font-size:100%;
+}
+h2 {
+	font-size:115%;
+}
+h3 {
+	font-size:115%;
+}
+h4 {
+	font-size:100%;
+}
+h5 {
+	font-size:100%;
+}
+h6 {
+	font-size:100%;
+}
+
+#principal {
+	margin:1%;
+	background:url('prueba1.png');
+	border: 0px solid #000000;
+}
+#cabecera{
+	font: 1vw verdana, sans-serif;	
+	text-align:center;
+}
+
+.pedido{
+	background: #4040ff;
+	
+	margin: 1%;	
+	text-align:left;
+	font-size: 85%;
+	padding: 0.1%;
+}
+
+.pedido label{
+	background: #4040ff;
+
+	text-align:left;
+	color:white;
+	margin-left: 0px;
+	width: 140px;
+	padding:0.5%;
+	display:inline-block;
+}
+.material{
+	display:inline-block;
+	margin: 1%;	
+	text-align:left;
+	font-size: 85%;
+	padding: 0.1%;
+}
+.material label{
+	text-align:left;
+	color:black;
+	margin-right: 140px;
+	width: 170px;
+	padding:0.1%;
+	display:inline-block;
+}
+.material input{
+	border-bottom: 2px solid blue;
+	
+}
+
+.myField{
+	margin: 1%;	
+	text-align:left;
+	font-size: 85%;
+	padding: 0.1%;
+}
+
+.myField label{
+	text-align:left;
+	color:black;
+	margin-left: 0px;
+	width: 150px;
+	padding:0.5%;
+	display:inline-block;
+}
+.pago{
+	margin: 1%;	
+	text-align:right;
+	background: #4040ff;
+	color:white;
+	font-size: 85%;
+	padding: 0.1%;
+}
+
+.lugar{
+	width: 625px;
+	display:inline-block;
+	border-bottom: 5px solid red;
+}
+.nombre{
+	width: 625px;
+	display:inline-block;
+	border-bottom: 5px solid red;
+}
+#seccion_autenticar {
+	width: 70%;
+	height:70vh;
+}
+
+#header_form{
+	margin-left: 240px;
+	padding: 0.5%;
+	margin: 0.5% 20% 0.5% 20%;
+}
+#miformulario{
+	margin: 0.5% 20% 5% 20%;
+
+}
+.myField input: not(.formButton){
+	border:1px solid #000000;
+	font-size:80%;
+	padding:.5%;
+}
+.formButton{
+	margin: 0%;
+	padding: .5%;
+	font-size: 90%;
+	width: 20%;
+}
+#pie {
+	padding: 20px;
+	border-top: 2px solid #999999;
+	font-size: 70%;
+}
